@@ -44,24 +44,11 @@
 		//inclui o código do google analytics
  		include_once("analyticstracking.php");
  	?>	
-<!-- 
-<div id="branding">
-    <div id="blog-title"><span><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></span></div>
-<?php if ( is_home() || is_front_page() ) { ?>
-        <h1 id="blog-description"><?php bloginfo( 'description' ) ?></h1>
-<?php } else { ?>
-        <div id="blog-description"><?php bloginfo( 'description' ) ?></div>
-<?php } ?>
-   </div><!– #branding –>
-
-
- -->
-<!-- <div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'seu-template' ) ?>"><?php _e( 'Skip to content', 'seu-template' ) ?></a></div>
- -->	<div id="topo" class="row">
+<div id="topo" class="row">
 		<div id="topoContainer" class="row">
 			<div id="logo" class="col-quarto">
 				<div id="contLogo">
-					<a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><img src="<?php bloginfo('template_url'); ?>/img/logoCoffito.png" /></a>
+					<a href="<?php bloginfo( 'url' ) ?>/" title="Conselho Federal de Fisioterapia e Terapia Ocupacional" rel="home"><img src="<?php bloginfo('template_url'); ?>/img/logoCoffito.png" title="Conselho Federal de Fisioterapia e Terapia Ocupacional" alt="Conselho Federal de Fisioterapia e Terapia Ocupacional" /></a>
 				</div>
 			</div>
 			<div id="menu" class="col-3quarto">
@@ -75,8 +62,6 @@
 					<ul id="menuN">
 						<li class="fecharMenu" ><a href="#" onclick="fecharMenu()"><img src="<?php bloginfo('template_url'); ?>/img/fecharMenu.png" /></a></li>
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-principal','items_wrap' => '%3$s','container' => '', ) ); ?>
-					<!-- 	<?//php wp_list_pages('title_li='); ?> -->
-
 					</ul>
 				</nav>
 			</div>

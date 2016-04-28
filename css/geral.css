@@ -159,7 +159,7 @@
 			background: #004263;*/
 			background:#fff;
 			border-top: 3px solid #4DBF5A;
-			height: 72px;
+		/*	height: 72px;*/
 		}
 
 		#topoContainer {
@@ -507,7 +507,7 @@
 		#conteudo h1 {
 			padding: 3px 0;
 			font-size: 20px;
-			font-size: 14px;
+			font-size: 15px;
 			color:#337F3C; 
 		}
 
@@ -648,7 +648,7 @@
 		}
 
 		div.artCont h2 {
-			font-size: 16px;
+			font-size: 15px;
 			margin: 5px 0;
 		}
 
@@ -919,7 +919,21 @@
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query*/
 
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 768px){
+
+		[class*="col-"]{
+			width: 100%;
+		}
+
+		.metaslider {
+			display: none;
+		}
+
+		div#acessibilidade {
+			/*display: none;*/
+		}
+	}
+	/*@media only screen and (max-width: 768px) {
 
 		[class*="col-"]{
 			width: 100%;
@@ -1017,3 +1031,4 @@
 		}
 	}
 
+*/
