@@ -36,13 +36,32 @@
 </div><!--geralRodape-->
 
 <script type="text/javascript">
-	function abreMenu() {
+	$(window).load(function() {
+			
+
+
+			$("li.menuP").on("click","a[href='#']",function(){
+			$("div#menuLateral").addClass("openMenu");
+			$("li.menuP").addClass("esconde");
+			$("li.fecharMenu").addClass("mostrar");
+			});
+
+			$("li.fecharMenu").on("click","a[href='#']",function(){
+			$("div#menuLateral").removeClass("openMenu");
+			$("li.fecharMenu").removeClass("mostrar");
+			$("li.menuP").removeClass("esconde");
+
+			$(this).parent().hide();
+			});
+
+	});
+/*	function abreMenu() {
 		document.getElementById("menuN").style.display="block";
 	}
 	function fecharMenu() {
 		//alert("teste");
 		document.getElementById("menuN").style.display="none";
-	}
+	}*/
 </script>
  <?php wp_footer(); ?> 
 </body>

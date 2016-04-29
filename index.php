@@ -3,6 +3,7 @@
 
 	<div id="conteudo" class="col-3quarto row">
 	<section>
+
 		<?php while ( have_posts() ) : the_post() ?>
 		<?php
 		//remove o filtro de link das midias sociais desta página 
@@ -12,7 +13,7 @@
 		<?php endwhile; ?>
 		<?php /* O Ciclo — com comentários! */ ?>
 		<?php query_posts("category_name=destaque&posts_per_page=3");?>
-		<div class="principalArtigo artigo row">
+		<div class="principalArtigo artigo row destaque">
 			<?php
 			   $category_destaque = get_category_by_slug("destaque")->cat_ID;			    // Get the ID of a given category
 			   $category_noticia = get_category_by_slug("noticia")->cat_ID;
