@@ -264,6 +264,7 @@ function wpmidia_enqueue_masked_input(){
 
 add_action('wp_footer', 'wpmidia_activate_masked_input');
 
+
 function wpmidia_activate_masked_input(){
    if( is_page('denuncie') || ('fale-conosco') ){ //mais uma vez, feito isso, o script abaixo só aparecerá na página Contato.
 ?>
@@ -294,6 +295,3 @@ function wpmidia_enqueue_masked_input(){
 
 }*/
 ?>
-
-
-

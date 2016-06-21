@@ -51,17 +51,50 @@
 			$("li.fecharMenu").removeClass("mostrar");
 			$("li.menuP").removeClass("esconde");
 
-			$(this).parent().hide();
+			$(this).parent().addClass("esconde");
 			});
 
-	});
-/*	function abreMenu() {
-		document.getElementById("menuN").style.display="block";
-	}
-	function fecharMenu() {
-		//alert("teste");
-		document.getElementById("menuN").style.display="none";
-	}*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx aumentar e diminuir fonte */
+$("#normal-fonte").click(function () {
+    var size = "14"; 
+
+    $("#conteudo article div.artCont").animate({'font-size' : size + 'px'});
+ return false;
+ }); 
+
+$("#aumentar-fonte").click(function () {
+    var size = $("#conteudo article div.artCont").css('font-size'); 
+ 
+    size = size.replace('px', '');
+    size = parseInt(size) + 2; 
+ 
+    $("#conteudo article div.artCont").animate({'font-size' : size + 'px'});
+ return false;
+ }); 
+ 
+ $("#diminuir-fonte").click(function () {
+    var size = $("#conteudo article div.artCont").css('font-size'); 
+ 
+    size = size.replace('px', '');
+    size = parseInt(size) - 2;
+ 
+    $("#conteudo article div.artCont").animate({'font-size' : size + 'px'});
+ return false;
+});
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx trocar estilo css*/
+ $("#contraste-fonte").click(function () {
+
+ 	$("link[title='contraste'").attr("href","<?php bloginfo('template_url'); ?>/styleContraste.css");
+   
+ });
+  $("#normalContraste-fonte").click(function () {
+
+ 	$("link[title='contraste'").attr("href","");
+   
+ });
+
+ });			
+
 </script>
  <?php wp_footer(); ?> 
 </body>

@@ -109,7 +109,7 @@
 
 
 		    ?>
-			<h2><a href="<?php echo esc_url( $category_link_evento ); ?>">Eventos</a></h2>
+			<h2 class="tituloPrimera"><a href="<?php echo esc_url( $category_link_evento ); ?>">Eventos</a></h2>
 			<article>
 				<div class="listaEventos">
 					<ul>
@@ -121,7 +121,7 @@
 								 <?php the_post_thumbnail(); ?>
 								</div>
 								<div class="col-3quarto">
-									<h3 class="">
+									<h3 class="tituloEvento">
 										<!--<span><?php the_time('d/m/y'); ?></span>-->
 										<a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'your-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a>
 									</h3>

@@ -9,15 +9,18 @@
 	elseif ( is_404() ) { bloginfo('name'); print ' | Not Found'; }
 	else { bloginfo('name'); wp_title('|'); get_page_number(); }
 	?></title>
-	<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<!-- 	<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+ -->	<meta charset="UTF-8" >
 	<meta name="viewport" content="width=device-width, initial-scaled=1.0">
 
 
 
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+	
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/js/bootstrap-carousel.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css"  />
+	<link rel="stylesheet" type="text/css" href="" title="contraste" />
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-	<!-- 	<?php wp_head(); ?> -->
+
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -25,6 +28,7 @@
 
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/bootstrap-carousel.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script>
 	$(window).load(function() {
 		$('#myCarousel').carousel()
@@ -37,6 +41,7 @@
 
 	});
 	</script>
+	
 </head>
 
 <body>
@@ -54,11 +59,13 @@
 			<div id="menu" class="col-3quarto">
 				<nav>
 					<ul id="menuN">
-						<li class="menuP">
-							<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/tresmenu.png" /></a>
-						</li>
-						<li class="fecharMenu" ><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/fecharMenu.png" /></a></li>
 						<?php wp_nav_menu( array( 'theme_location' => 'menu-principal','items_wrap' => '%3$s','container' => '', ) ); ?>
+						<li class="menuP">
+							<a href="#"  title="Sub-Menu"><img src="<?php bloginfo('template_url'); ?>/img/tresmenu.png" /></a>
+						</li>
+						<li class="fecharMenu" >
+							<a href="#" title="Sub-Menu"><img src="<?php bloginfo('template_url'); ?>/img/fecharMenu.png" /></a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -82,5 +89,32 @@
 
 				};
 				?>	
+				<div id="btnAcessibilidade" class="col-quarto">
+					<ul class="listaFormulario">
+						<li>
+							<!-- DIMINUIR FONTE -->
+							 <span id="diminuir-fonte">
+							     <a title="Diminuir Fonte" alt="Diminuir">A-</a>
+							 </span> 
+							 <!-- normal fonte -->
+							 <span id="normal-fonte">
+							 	<a title="Normal Fonte" alt="Normal">A</a>
+							 </span>
+							 <!-- AUMENTAR FONTE -->
+							 <span id="aumentar-fonte">
+							     <a title="Aumentar Fonte" alt="Aumentar">A+</a>
+							 </span>
+							 <!--contraste fonte-->
+							 <span id="contraste-fonte">
+							     <a title="Contraste" alt="Contraste">A</a>
+							 </span>
+							 <!--normalcontraste fonte-->
+							 <span id="normalContraste-fonte">
+							     <a title="Normal Contraste" alt="Normal Contraste">A</a>
+							 </span>							 
+
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>

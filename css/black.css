@@ -1,0 +1,13 @@
+html, div.artCont, div.artigo h1, div#conteudo h1, .box, #busca input#s, table tbody tr:nth-child(odd), #topo,.cartao,#menuLateral ul li ul li a {
+	background:#000 !important;
+}
+
+#menu a:hover {
+	background :#000 !important;
+	color: #fff;
+	
+}
+#menuLateral ul li ul li a:hover{
+	background:#fff !important;
+	color: #000 !important;
+}

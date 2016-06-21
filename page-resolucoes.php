@@ -21,7 +21,15 @@
 			?>
 
 <!-- Print a link to this category -->
-
+<div id="buscaResolucoes" class="row box barra">
+	<form id="searchformResolucoes" action="<?php bloginfo('home'); ?>/" method="get">
+		<div>
+			<input id="s" type="text" name="s" value="<?php echo wp_specialchars($s, 1); ?>" />
+			<input type="hidden" name="cat" value="14" />
+			<input id="searchsubmit" type="submit" value="Buscar nas Resoluções" />
+		</div>
+	</form>
+</div>
 			<h2>resoluções</h2>
 			<article>
 				<div class="listaEventos">

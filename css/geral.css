@@ -20,15 +20,11 @@
 		
 			/*font-family:Verdana,sans-serif;*/
 			font-family: "Open Sans", sans-serif;
-			font-size:15px;
+			font-size:14px;
 			line-height:1.5;
 			/*background-image: url("../img/contours-opaque.png"),url("../img/setas.png");*/
 			-webkit-font-smoothing: subpixel-antialiased;
 			color: #666;
-			
-/*			background-position:0 ;
-			background-repeat: repeat-y;
-			background-size: 35%;*/
 		}
 
 		h1,h2,h3,h4,h5,h6 {
@@ -37,7 +33,7 @@
 			font-weight:400;
 /*			font-variant: small-caps;
 */			letter-spacing: 1px;
-			text-transform:uppercase;
+			/*text-transform:uppercase;*/
 		}
 
 		h1 {font-size: 36px;}
@@ -210,7 +206,7 @@
 		}
 
 		#menu ul li {
-			margin: 0px 5px 0px 0;
+			margin: 3px 5px !important;
 			/*height: 30px;*/
 			display: inline-block;
 			list-style-type: none;
@@ -259,11 +255,11 @@
 			box-shadow: 0 1px 20px 3px rgba(0,0,0,0.24);
 
 		}
-		#menuP {
-			display: none;
+		li.menuP ,li.fecharMenu {
+			display: none !important;
 		}
 
-		#menuP a:hover {
+		#menu li.menuP a:hover, #menu li.fecharMenu a:hover {
 			background:rgba(255,255,255,0.5);
 			display: block;
 			border-radius: 25px;
@@ -321,31 +317,58 @@
 			text-decoration: underline;
 		}
 
+		div#btnAcessibilidade {
+			padding-left: 10px;
+
+		}
+
+		div#btnAcessibilidade ul li a {
+			cursor: pointer;
+		}
+
+		div#btnAcessibilidade ul li a:hover {
+			color: #6da256;
+			text-decoration: underline;
+		}
+
+		div#btnAcessibilidade span#contraste-fonte a {
+			padding:2px 6px;
+			color: #fff;
+			background:#000;
+			border: 1px solid #dedede;
+		}
+
+		div#btnAcessibilidade span#normalContraste-fonte a {
+			padding:2px 6px;
+			color: #000;
+			background:#fff;
+			border: 1px solid #dedede;
+		}
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx menu lateral*/
 		
 		div#menuLateral.responsive {
 			display: none;
 		}	
 
-		#busca input#s {
+		#busca input#s,#buscaResolucoes input#s {
 			padding: 5px;
 			float: left;
 			width: 140px;
 			border:1px solid #4DBF5A;
 		}
 
-		#busca label {
+		#busca label,#buscaResolucoes label {
 			display: none;
 		}
 
-		#busca input#searchsubmit {
+		#busca input#searchsubmit,#buscaResolucoes input#searchsubmit {
 			padding:5px;
 			float: left;
 			background:#4DBF5A;
 			color:#fff;
 			border:1px solid #D5D5D5;
 		}
-		#busca input#searchsubmit:hover {
+		#busca input#searchsubmit:hover,#buscaResolucoes input#searchsubmit:hover {
 			padding:5px;
 			float: left;
 			background:#D5D5D5;
@@ -354,7 +377,7 @@
 			cursor: pointer;
 		}
 
-		#busca {
+		#busca,#buscaResolucoes {
 			margin:0 0 20px;
 			padding: 10px 0;
 		}
@@ -502,11 +525,13 @@
 			min-height: 550px;
 		}
 
-		#conteudo h1 {
-			padding: 3px 0;
+		#conteudo h1, div.artigo h1 {
+			padding: 3px 10px;
 			font-size: 20px;
 			font-size: 15px;
-			color:#337F3C; 
+			color:#929292; 
+			background:#f7f7f7;
+			border-bottom: 1px solid #dedede
 		}
 
 		#conteudoId {
@@ -562,8 +587,7 @@
 		}
 
 		div.principalArtigo h3 {
-			font-size: 18px !important;
-			font-size: 12px !important;
+			font-size: 14px !important;
 		}
 
 		div.principalArtigo h3 span {
@@ -608,6 +632,9 @@
 			
 		}
 
+		div h3.tituloEvento {
+			font-size: 13px !important;
+		}
 
 
 		.alturaMinima {
@@ -625,10 +652,16 @@
 		div.artigo a:hover {
 			text-decoration: underline;
 		}
-		div.artigo h1 {
+		
+
+
+		div.artCont h2 {
+			color: #337F3C;
 			font-size: 20px;
 			border-bottom: 2px dotted #d5d5d5;
 		}
+
+
 
 		div.artInfo {
 			margin-top:24px;
@@ -640,7 +673,7 @@
 
 		
 
-		div.artCont h2, div.artCont h3, div.artCont h4 {
+		div.artCont h3, div.artCont h4 {
 			font-family: 'Oswald', sans-serif;
 			font-weight: 500;
 			color: #222;
@@ -936,6 +969,13 @@
 			/*display: none;*/
 		}
 
+		div#btnAcessibilidade {
+			/*display: none;*/
+			position: relative;
+			z-index: 5000;
+			width: 25% !important;
+			float: right !important;
+		}
 		div.listaNoticia, div.container.cartao {
 			height: auto !important;
 		}
@@ -953,25 +993,21 @@
 			display: inherit;
 		}
 
-		.menuP {
-			display:inherit;
+		li.menuP ,li.fecharMenu {
+			display:inline-block !important;
 			background: #6da256;
 			border-radius: 25px;
 			width: 30px !important;
 			margin: 0 0 0 10px !important;
 			cursor: default;
+			position: relative;
+			top: 5px;
 		}
 
-		ul#menuN li.menuP li a:hover {
+		ul#menuN li.menuP li a:hover, ul#menuN li.fecharMenu li a:hover {
 			background:#337F3C !important;
 		}
-		li.fecharMenu {
-			background: #6da256;
-			border-radius: 25px;
-			width: 30px !important;
-			margin: 0 0 0 10px !important;
-			cursor: default;
-		}
+
 		div#geral {
 			display: flex;
 			flex-direction:column;
@@ -986,28 +1022,93 @@
 
 			display: none;
 		}
-		li.menuP.esconde {
+		li.menuP.esconde, li.fecharMenu.esconde {
 			display: none !important;
 		}
 		li.fecharMenu {
 			display: none !important;
 		}
 
-		li.fecharMenu.mostrar {
+		li.menuP.mostrar,li.fecharMenu.mostrar  {
 			display: inline-block !important;
+			position: relative;
+			top: 5px;
 		}
 
 		div#busca {
 			display: none !important;
 		}
+
+		div#buscaResolucoes {
+			margin:30px 0 !important;
+		}
+
+	
 	}
 
-	@media only screen and (max-width: 425px){
+	@media only screen and (max-width:550px ){
+		div#btnAcessibilidade {
+			/*display: none;*/
+			position: relative;
+			z-index: 5000;
+			width: 30% !important;
+			float: right !important;
+		}
+	}
+
+	@media only screen and (max-width: 460px){
+
+		div#btnAcessibilidade {
+			/*display: none;*/
+			position: relative;
+			z-index: 5000;
+			width: 40% !important;
+			float: right !important;
+		}
+
 		#menu ul li {
 			display: block;
 			border-bottom: 1px solid #dedede;
 		}
 
+		input.wpcf7-form-control,textarea.wpcf7-form-control,div.g-recaptcha iframe  {
+			width: 90% !important;
+		}
+
+		ul.listaFormulario li {
+			display: block !important;
+		}
+		div.artcont img {
+			float: none !important;
+			
+		}	
+		li.menuP.mostrar,li.fecharMenu.mostrar, li.menuP, li.fecharMenu  {
+			position: relative;
+			top:0 !important;
+		}
+		
+		table {
+			table-layout: fixed;
+			word-wrap:break-word;
+		}
+	}
+
+	@media only screen and (max-width: 370px) {
+		div#btnAcessibilidade {
+			/*display: none;*/
+			position: relative;
+			z-index: 5000;
+			width: 45% !important;
+			float: right !important;
+		}
+		div.artcont img {
+			margin: 10px 0px !important;
+		}
+
+		table {
+			table-layout: fixed;
+			word-wrap:break-word;
+		}
 	}
 	/*@media only screen and (max-width: 768px) {
 
