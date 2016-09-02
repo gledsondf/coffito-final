@@ -1,0 +1,21 @@
+div#topo {
+	display: none;
+}
+
+div#acessibilidade {
+	display: none;
+}
+
+div#menulateral {
+	display: none;
+}
+
+div#conteudo {
+	width: 95% !important;
+}
+ div#geralRodape {
+ 	display: none;
+ }
+@page {
+	margin: 0.5cm;
+}

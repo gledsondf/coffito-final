@@ -82,7 +82,7 @@ function midiaSocialbtn ($content) {
 		$content .= '<div class="artFoot row">';
 		$content .= '<footer>';
 		$content .= '<div class="col-2terco">
-						<p>CREFFITO 16 </p>
+						<p>COFFITO </p>
 						<ul id="linkCategoria">
 							<li><span>categoria:</span>'.$atalhoListaCategoria.'</li>
 						</ul>

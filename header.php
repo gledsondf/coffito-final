@@ -15,9 +15,10 @@
 
 
 
-	
+	<link rel="shortcut icon" href="http://coffito.gov.br/nsite/wp-content/uploads/2016/07/favicon-16x16.png"/>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/js/bootstrap-carousel.css" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css"  />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/print.css"  media="print" />
 	<link rel="stylesheet" type="text/css" href="" title="contraste" />
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 

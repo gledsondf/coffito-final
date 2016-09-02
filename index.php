@@ -55,7 +55,7 @@
 <!-- 			<p class="linkTodasNoticias row"><a href="<?php echo esc_url( $category_link_noticia ); ?>">todas as notícias</a></p>
  -->		</div>
 
-		<?php query_posts("category_name=noticia&posts_per_page=3");?>
+		<?php query_posts("category_name=noticia&posts_per_page=3&cat=-26");?>
 		<div class="principalArtigo artigo row">
 			<?php
 				    // Get the ID of a given category
@@ -109,7 +109,7 @@
 
 
 		    ?>
-			<h2 class="tituloPrimera"><a href="<?php echo esc_url( $category_link_evento ); ?>">Eventos</a></h2>
+			<h2 class="tituloPrimera"><a href="<?php echo esc_url( $category_link_evento ); ?>">Eventos / Em pauta</a></h2>
 			<article>
 				<div class="listaEventos">
 					<ul>
@@ -135,6 +135,7 @@
 					</ul>
 				</div>
 			</article>
+			<p class="linkTodasNoticias row"><a href="<?php echo esc_url( $category_link_evento ); ?>">todos os Eventos</a></p>
 		</div>
 
 	</section>

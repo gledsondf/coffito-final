@@ -15,21 +15,20 @@
 						<li>Telefone:(61)3035-3800 Fax:(61) 3321-0828.</li>
 						<li>SUBSEDE: Rua Padre Anchieta,2285. Edifício Delta Center, Salas 801/802. Bairro Bigorrilho, Curitiba/Paraná.</li>
 						<li>CEP: 80730.000</li>
+						<li>CNPJ: 00.487.140/0001-36</li>
 					</ul>
 				</address>
 
 			</div>
 			<div id="midiaRodape" class="col-terco">
-				<ul>
-					<li><a href="https://www.facebook.com/Conselho-Regional-de-Fisioterapia-e-Terapia-Ocupacional-do-Maranh%C3%A3o-792759374172502/" target="_blank"><img title="facebook"  alt="facebook" src="<?php bloginfo('template_url'); ?>/img/logoFace.png" /></a></li>
-<!-- 					<li><a href="#"><img title="Youtube"  alt="Youtube" src="<?php bloginfo('template_url'); ?>/img/logoYoutube.png" /></a></li>
- -->					<li><a href="https://twitter.com/crefito16" target="_blank"><img title="Twitter"  alt="Twitter" src="<?php bloginfo('template_url'); ?>/img/logoTwitter.png" /></a></li>
-					    <li><a href="https://instagram.com/crefito16/" target="_blank"><img title="Instagram"  alt="Instagram" src="<?php bloginfo('template_url'); ?>/img/logoInstagram.png" /></a></li>
-					<li><a href="https://www.flickr.com/photos/crefito16/" target="_blank"><img title="Flickr"  alt="Flickr" src="<?php bloginfo('template_url'); ?>/img/logoFlickr.png" /></a></li>
-					<!--<li><a href="#"><img title="Whatsapp"  alt="Whatsapp" src="<?php bloginfo('template_url'); ?>/img/logoWhatsapp.png" /></a></li> -->
-				</ul>
-				
-				
+					<ul>
+						<li><a href="https://www.facebook.com/Coffitooficial/" target="_blank"><img title="facebook"  alt="facebook" src="http://coffito.gov.br/nsite/wp-content/themes/coffito/img/logoFace.png" /></a></li>
+						<li><a href="https://www.youtube.com/channel/UCz9pTR7-65dqctZ5i0WfaRw"><img title="Youtube"  alt="Youtube" src="http://coffito.gov.br/nsite/wp-content/themes/coffito/img/logoYoutube.png" /></a></li>
+						<li><a href="https://twitter.com/@coffito_oficial" target="_blank"><img title="Twitter"  alt="Twitter" src="http://coffito.gov.br/nsite/wp-content/themes/coffito/img/logoTwitter.png" /></a></li>
+						<li><a href="https://www.instagram.com/comunicacao_coffito/" target="_blank"><img title="Instagram"  alt="Instagram" src="http://coffito.gov.br/nsite/wp-content/themes/coffito/img/logoInstagram.png" /></a></li>
+						<li><a href=" https://www.flickr.com/photos/coffito/" target="_blank"><img title="Flickr"  alt="Flickr" src="http://coffito.gov.br/nsite/wp-content/themes/coffito/img/logoFlickr.png" /></a></li>
+						<!--<li><a href="#"><img title="Whatsapp"  alt="Whatsapp" src="http://coffito.gov.br/nsite/wp-content/themes/coffito/img/logoWhatsapp.png" /></a></li> -->
+					</ul>
 			</div>
 		</footer>
 	</div>
